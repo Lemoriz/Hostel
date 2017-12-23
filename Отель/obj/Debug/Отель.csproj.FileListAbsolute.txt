@@ -1,0 +1,15 @@
+C:\Users\Ramil\Desktop\Работа\Отель\Отель\bin\Debug\Отель.exe
+C:\Users\Ramil\Desktop\Работа\Отель\Отель\bin\Debug\Отель.pdb
+C:\Users\Ramil\Desktop\Работа\Отель\Отель\obj\Debug\Отель.Properties.Resources.resources
+C:\Users\Ramil\Desktop\Работа\Отель\Отель\obj\Debug\Отель.Otel.resources
+C:\Users\Ramil\Desktop\Работа\Отель\Отель\obj\Debug\Отель.csproj.GenerateResource.Cache
+C:\Users\Ramil\Desktop\Работа\Отель\Отель\obj\Debug\Отель.csproj.CoreCompileInputs.cache
+C:\Users\Ramil\Desktop\Работа\Отель\Отель\obj\Debug\Отель.exe
+C:\Users\Ramil\Desktop\Работа\Отель\Отель\obj\Debug\Отель.pdb
+C:\Users\Ramil\Desktop\Работа\Отель\Отель\obj\Debug\Отель.Карта_сотрудника.resources
+C:\Users\Ramil\Desktop\Работа\Отель\Отель\obj\Debug\Отель.Сотрудник.resources
+C:\Users\Ramil\Desktop\Работа\Отель\Отель\bin\Debug\Отель.exe.config
+C:\Users\Ramil\Desktop\Работа\Отель\Отель\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Ramil\Desktop\Работа\Отель\Отель\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Ramil\Desktop\Работа\Отель\Отель\obj\Debug\Отель.Авторизация.resources
+C:\Users\Ramil\Desktop\Работа\Отель\Отель\obj\Debug\Отель.csprojResolveAssemblyReference.cache
