@@ -82,10 +82,11 @@ namespace Отель
         private void button1_Click(object sender, EventArgs e)
         {
 
-           // if (Convert.ToString(Authenticator.AccessCheck) == "admin")
-            //{
-                if(Convert.ToDateTime(dateIssue.Text) <= DateTime.Now)
+
+            if (Convert.ToDateTime(dateIssue.Text) <= DateTime.Now)
             {
+                if (lastName.Text != "" && firstName.Text != "" && position.Text != "")
+                {
                     WorkWithFile.jArray[idx] = JToken.FromObject(new Bio
                     {
                         Должность = position.Text,
@@ -107,6 +108,11 @@ namespace Отель
                     WorkWithFile.SaveArray("Employee.txt");
                     MessageBox.Show("Изменения сохранены!", "Успешно");
                 }
+                else
+                {
+                    MessageBox.Show("Поля: имя, фамилия, должность не должны бить пустыми", "Ошибка");
+                }
+            }
             else MessageBox.Show("Дата не может быть больше сегодняшней", "Ошибка!");
             //}
             //else MessageBox.Show("У вас нет прав доступа", "Ошибка!");

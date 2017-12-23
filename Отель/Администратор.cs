@@ -103,30 +103,37 @@ namespace Отель
         }
 
         private void addEmployeer_Click(object sender, EventArgs e)
-        {
-            if (Convert.ToDateTime(dateIssue.Text) <= DateTime.Now)//Проверка на ввод даты, которая больше сегодняшней
+        {            
+            if ((Convert.ToDateTime(dateIssue.Text) <= DateTime.Now))//Проверка на ввод даты, которая больше сегодняшней
             {
-                Bio bio = new Bio //Создаем новый экземпляр Bio и иницилизируем его значениями, которые ввел пользователь
+                if (lastName.Text != "" && firstName.Text != "" && position.Text != "")
                 {
-                    Имя = firstName.Text,
-                    Фамилия = lastName.Text,
-                    Отчество = midlleName.Text,
-                    Должность = position.Text,
-                    Серия_паспорта = series.Text,
-                    Дата_выдачи = dateIssue.Text,
-                    Номер_паспорта = number.Text,
-                    Пол = sex.Text,
-                    Страховой_номер = insurance.Text,
-                    Семейное_положение = famileStatus.Text,
-                    Фактический_адрес_проживания = homeAddress.Text,
-                    Серия_рудовой_книжки = seriesWorkBook.Text,
-                    Номер_трудовой_книжки = nuberWorkBook.Text,
-                    Вкладыш = insertionWorkBook.Text,
-                    Гражданство = citizenShip.Text
-                };
-                WorkWithFile.jArray.Add(JToken.FromObject(bio));//Добавляем в основной массив
-                WorkWithFile.SaveArray("Employee.txt");//Сохраняем измененный массив в файл
-                MessageBox.Show("Запись добавлена", "Успешно");
+                    Bio bio = new Bio //Создаем новый экземпляр Bio и иницилизируем его значениями, которые ввел пользователь
+                    {
+                        Имя = firstName.Text,
+                        Фамилия = lastName.Text,
+                        Отчество = midlleName.Text,
+                        Должность = position.Text,
+                        Серия_паспорта = series.Text,
+                        Дата_выдачи = dateIssue.Text,
+                        Номер_паспорта = number.Text,
+                        Пол = sex.Text,
+                        Страховой_номер = insurance.Text,
+                        Семейное_положение = famileStatus.Text,
+                        Фактический_адрес_проживания = homeAddress.Text,
+                        Серия_рудовой_книжки = seriesWorkBook.Text,
+                        Номер_трудовой_книжки = nuberWorkBook.Text,
+                        Вкладыш = insertionWorkBook.Text,
+                        Гражданство = citizenShip.Text
+                    };
+                    WorkWithFile.jArray.Add(JToken.FromObject(bio));//Добавляем в основной массив
+                    WorkWithFile.SaveArray("Employee.txt");//Сохраняем измененный массив в файл
+                    MessageBox.Show("Запись добавлена", "Успешно");
+                }
+                else
+                {
+                    MessageBox.Show("Ошибка","Поля: имя, фамилия, должность не должны бить пустыми");
+                }
             }
             else MessageBox.Show("Дата не может быть больше сегодняшней", "Ошибка!");
         }
